@@ -162,10 +162,11 @@ header .container-fluid .header-inner .nav-logins .apply a {
   font-size: 3.4rem;
   line-height: 4.8rem;
   margin: 32px 0 0;
+  width: 620px;
 }
 .banner .banner-inner .content .content-inner h1 .line {
   overflow: hidden;
-  height: 80px;
+  height: 76px;
   position: relative;
 }
 .banner .banner-inner .content .content-inner h1 .line span {

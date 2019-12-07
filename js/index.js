@@ -1,7 +1,8 @@
+// Header
 const header = document.getElementById("header");
+//Banner
 const banner = document.getElementById("banner-bg");
 const bannerAdditonal = document.getElementById("banner-additonal-bg");
-
 //content
 const h1Line = document.querySelectorAll(".line span");
 const contentP = document.querySelector(".content-inner p");
@@ -22,66 +23,61 @@ const featuresContentButton = document.querySelector(
 );
 const featuresList = document.querySelectorAll(".features-list li");
 
-//delete
-const bannerInner = document.getElementById("bannerInner");
-
 //banner animation
-gsap.from([bannerAdditonal, banner], {
-  duration: 1.2,
-  width: 0,
-  skewX: 6,
-  ease: "power3.inOut",
-  stagger: {
-    amount: 0.2
-  }
-});
-// header animation
-gsap.from(header, {
-  delay: 1,
-  y: 16,
-  duration: 0.8,
-  opacity: 0,
-  ease: "power3.inOut"
-});
 
-//Stagger content
+const bannerTl = gsap.timeline();
 
-gsap.from(h1Line, {
-  delay: 1.2,
-  y: 80,
-  duration: 0.8,
-  ease: "power3.out",
-  stagger: {
-    amount: 0.2
-  }
-});
-
-gsap.from([contentP, contentButton], {
-  delay: 1.6,
-  y: -40,
-  duration: 0.8,
-  opacity: 0,
-  ease: "power3.out",
-  stagger: {
-    amount: 0.2
-  }
-});
-
-gsap.to([playVideo, playVideoCover], {
-  delay: 1.6,
-  opacity: 1,
-  duration: 0
-});
-gsap.to(playVideoCover, {
-  delay: 1.8,
-  height: 0,
-  duration: 1,
-  ease: "power3.out"
-});
+bannerTl
+  .from([bannerAdditonal, banner], {
+    duration: 1.2,
+    width: 0,
+    skewX: 6,
+    ease: "power3.inOut",
+    stagger: {
+      amount: 0.2
+    }
+  })
+  .from(header, {
+    delay: -0.2,
+    y: 16,
+    duration: 0.8,
+    opacity: 0,
+    ease: "power3.inOut"
+  })
+  .from(h1Line, {
+    delay: -0.4,
+    y: 80,
+    duration: 0.8,
+    ease: "power3.out",
+    stagger: {
+      amount: 0.2
+    }
+  })
+  .from([contentP, contentButton], {
+    delay: -0.6,
+    y: -40,
+    duration: 0.8,
+    opacity: 0,
+    ease: "power3.out",
+    stagger: {
+      amount: 0.2
+    }
+  })
+  .to([playVideo, playVideoCover], {
+    delay: -0.6,
+    opacity: 1,
+    duration: 0
+  })
+  .to(playVideoCover, {
+    delay: -0.6,
+    height: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
 
 // hand
 gsap.from(handImg, {
-  delay: 2,
+  delay: 2.2,
   x: -100,
   skewX: 2,
   duration: 0.8,
@@ -90,7 +86,7 @@ gsap.from(handImg, {
 });
 
 gsap.from([featureBanner, featureBannerGreen], {
-  delay: 2.2,
+  delay: 2.4,
   x: -60,
   skewX: 6,
   duration: 0.8,
@@ -101,41 +97,34 @@ gsap.from([featureBanner, featureBannerGreen], {
   }
 });
 
-const featuresAnimation = a => {
-  gsap.from(a, {
-    opacity: 0
-  });
-};
-
 //scroll magic
+const featuresTl = gsap.timeline();
+featuresTl
+  .from([featuresContentTitle, featuresContentP, featuresContentButton], {
+    opacity: 0,
+    y: 40,
+    duration: 0.6,
+    ease: "power3.out",
+    stagger: {
+      amount: 0.2
+    }
+  })
+  .from(featuresList, {
+    delay: -0.4,
+    opacity: 0,
+    y: 40,
+    duration: 0.6,
+    ease: "power3.out",
+    stagger: {
+      amount: 0.4
+    }
+  });
 
-var tl = gsap.timeline();
-tl.from([featuresContentTitle, featuresContentP, featuresContentButton], {
-  opacity: 0,
-  y: 40,
-  duration: 0.6,
-  ease: "power3.out",
-  stagger: {
-    amount: 0.2
-  }
-}).from(featuresList, {
-  delay: -0.4,
-  opacity: 0,
-  y: 40,
-  duration: 0.6,
-  ease: "power3.out",
-  stagger: {
-    amount: 0.2
-  }
-});
-
-var controller = new ScrollMagic.Controller();
-
-var scene = new ScrollMagic.Scene({
+const controller = new ScrollMagic.Controller();
+const scene = new ScrollMagic.Scene({
   triggerElement: "#featureBannerGreen",
   triggerHook: 0,
   reverse: false
 })
-
-  .setTween(tl)
+  .setTween(featuresTl)
   .addTo(controller);
