@@ -163,10 +163,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    height: 80vh; }
-    @media (max-width: 1440px) {
-      .banner #banner-bg {
-        height: 90vh; } }
+    height: 100%; }
   .banner #banner-additonal-bg {
     background: #233567;
     position: absolute;
@@ -174,10 +171,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
-    height: 80vh; }
-    @media (max-width: 1440px) {
-      .banner #banner-additonal-bg {
-        height: 90vh; } }
+    height: 100%; }
   .banner .banner-inner {
     width: 100%;
     height: 80vh;
@@ -188,12 +182,9 @@ body {
         height: 90vh; } }
     .banner .banner-inner .content {
       width: 60%;
-      height: 80vh;
+      height: 100%;
       display: flex;
       align-items: center; }
-      @media (max-width: 1440px) {
-        .banner .banner-inner .content {
-          height: 90vh; } }
       .banner .banner-inner .content .content-inner h1 {
         font-family: "Playfair Display";
         color: #233567;
