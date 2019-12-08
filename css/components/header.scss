@@ -25,7 +25,8 @@ header {
         right: 0;
         display: flex;
         justify-content: center;
-
+        width: 50%;
+        margin: 0 auto;
         nav {
           ul {
             display: flex;
@@ -49,6 +50,7 @@ header {
         }
       }
       .nav-logins {
+        z-index: 12;
         display: flex;
         align-items: center;
         .login {
@@ -76,9 +78,10 @@ header {
             color: $blue;
             border: 2px solid $blue;
             border-radius: 100px;
-            @media (max-width: 1440px) {
-              height: 48px;
-              line-height: 48px;
+            transition: 0.2s ease-in-out;
+            &:hover {
+              background: $blue;
+              color: $white;
             }
             @media (max-width: 1440px) {
               padding: 0px 24px;
