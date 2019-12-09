@@ -385,6 +385,7 @@ header {
             font-weight: 600;
             color: #233567; }
     header .container-fluid .header-inner .nav-logins {
+      z-index: 12;
       display: flex;
       align-items: center; }
       header .container-fluid .header-inner .nav-logins .login a {
@@ -402,7 +403,7 @@ header {
         height: 52px;
         line-height: 52px;
         font-size: 0.875rem;
-        padding: 0 32px;
+        padding: 0px 32px;
         text-decoration: none;
         font-weight: 600;
         color: #233567;
@@ -523,7 +524,7 @@ body {
         height: 56px;
         line-height: 56px;
         font-size: 1rem;
-        padding: 0 32px;
+        padding: 0px 32px;
         text-decoration: none;
         font-weight: 600;
         color: #ffffff;
