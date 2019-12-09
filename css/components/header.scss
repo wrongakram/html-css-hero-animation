@@ -14,7 +14,7 @@ header {
       justify-content: space-between;
       width: 100%;
       .logo {
-        font-family: "Playfair Display", "poppins";
+        font-family: "Playfair Display", "Poppins";
         font-size: 1.875rem;
         font-weight: 700;
         color: $blue;
@@ -35,7 +35,10 @@ header {
             li {
               list-style: none;
               margin: 0 40px;
-              @media (max-width: 1440px) {
+
+              @media (max-width: $widescreen) {
+
+
                 margin: 0 24px;
               }
               a {
@@ -61,7 +64,7 @@ header {
             font-weight: 600;
             color: $blue;
             margin-right: 48px;
-            @media (max-width: 1440px) {
+            @media (max-width: $widescreen) {
               margin-right: 24px;
             }
           }
@@ -72,7 +75,7 @@ header {
             height: 52px;
             line-height: 52px;
             font-size: 0.875rem;
-            padding: 0px 32px;
+            padding: 0 32px;
             text-decoration: none;
             font-weight: 600;
             color: $blue;
@@ -83,8 +86,8 @@ header {
               background: $blue;
               color: $white;
             }
-            @media (max-width: 1440px) {
-              padding: 0px 24px;
+            @media (max-width: $widescreen) {
+              padding: 0 24px;
             }
           }
         }

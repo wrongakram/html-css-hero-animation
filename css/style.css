@@ -305,7 +305,7 @@ template {
 
 body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 3000px; }
+  height: 2000px; }
 
 .container {
   width: 1345px;
@@ -315,7 +315,7 @@ body {
     .container {
       width: 1153px;
       min-width: 1153px; } }
-  @media (max-width: 1280px) {
+  @media (max-width: 1152px) {
     .container {
       width: 961px;
       min-width: 961px; } }
@@ -356,7 +356,7 @@ header {
     justify-content: space-between;
     width: 100%; }
     header .container-fluid .header-inner .logo {
-      font-family: "Playfair Display", "poppins";
+      font-family: "Playfair Display", "Poppins";
       font-size: 1.875rem;
       font-weight: 700;
       color: #233567; }
@@ -415,11 +415,11 @@ header {
           color: #ffffff; }
         @media (max-width: 1440px) {
           header .container-fluid .header-inner .nav-logins .apply a {
-            padding: 0px 24px; } }
+            padding: 0 24px; } }
 
 body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 3000px; }
+  height: 2000px; }
 
 .container {
   width: 1345px;
@@ -429,7 +429,7 @@ body {
     .container {
       width: 1153px;
       min-width: 1153px; } }
-  @media (max-width: 1280px) {
+  @media (max-width: 1152px) {
     .container {
       width: 961px;
       min-width: 961px; } }
@@ -463,20 +463,20 @@ body {
   @media (max-width: 1440px) {
     .banner {
       height: 90vh; } }
-  .banner #banner-bg {
-    background: #ffe5e5;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%; }
-  .banner #banner-additonal-bg {
+  .banner .banner-addition-bg {
     background: #233567;
     position: absolute;
     left: 0;
-    top: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%; }
+  .banner .banner-bg {
+    background: #ffe5e5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     bottom: 0;
     height: 100%; }
   .banner .banner-inner {
@@ -502,11 +502,10 @@ body {
         @media (max-width: 1440px) {
           .banner .banner-inner .content .content-inner h1 {
             font-size: 3.1rem;
-            line-height: 3.6rem;
-            margin: 32px 0 0; } }
+            line-height: 3.6rem; } }
         .banner .banner-inner .content .content-inner h1 .line {
           overflow: hidden;
-          height: 70px;
+          height: 76px;
           position: relative; }
           .banner .banner-inner .content .content-inner h1 .line span {
             position: absolute; }
@@ -595,7 +594,7 @@ body {
 
 body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 3000px; }
+  height: 2000px; }
 
 .container {
   width: 1345px;
@@ -605,7 +604,7 @@ body {
     .container {
       width: 1153px;
       min-width: 1153px; } }
-  @media (max-width: 1280px) {
+  @media (max-width: 1152px) {
     .container {
       width: 961px;
       min-width: 961px; } }
@@ -649,7 +648,7 @@ body {
         color: #233567;
         font-size: 2.6rem;
         line-height: 3.4rem;
-        margin: 0 0 42px; }
+        margin: 0 0 40px; }
       .features .features-inner .features-content p {
         line-height: 1.8rem;
         font-weight: 300;

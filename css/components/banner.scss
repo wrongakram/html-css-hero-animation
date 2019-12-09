@@ -6,21 +6,21 @@
   @media (max-width: $widescreen) {
     height: 90vh;
   }
-  #banner-bg {
-    background: $lPink;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-  }
-  #banner-additonal-bg {
+  .banner-addition-bg {
     background: $blue;
     position: absolute;
     left: 0;
-    top: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  .banner-bg {
+    background: $lPink;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     bottom: 0;
     height: 100%;
   }
@@ -48,7 +48,6 @@
           @media (max-width: $widescreen) {
             font-size: 3.1rem;
             line-height: 3.6rem;
-            margin: 32px 0 0;
           }
           .line {
             overflow: hidden;
@@ -76,7 +75,7 @@
             height: 56px;
             line-height: 56px;
             font-size: 1rem;
-            padding: 0px 32px;
+            padding: 0 32px;
             text-decoration: none;
             font-weight: 600;
             color: $white;

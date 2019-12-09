@@ -1,21 +1,23 @@
-// Header
-const header = document.getElementById("header");
-//Banner
-const banner = document.getElementById("banner-bg");
-const bannerAdditonal = document.getElementById("banner-additonal-bg");
+//header
+const header = document.querySelector("#header");
+
+//banner
+const banner = document.querySelector("#bannerBg");
+const bannerAddition = document.querySelector("#bannerBgAddition");
+
 //content
 const h1Line = document.querySelectorAll(".line span");
 const contentP = document.querySelector(".content-inner p");
 const contentButton = document.querySelector(".content-inner .btn-row");
 const playVideo = document.querySelector(".play-video span");
-const playVideoCover = document.querySelector(".content-inner .cover");
+const playVideoCover = document.querySelector(".play-video .cover");
 
 //image
 const handImg = document.querySelector(".image-inner img");
 const featureBanner = document.querySelector("#featureBanner");
 const featureBannerGreen = document.querySelector("#featureBannerGreen");
 
-//features
+//feauters
 const featuresContentTitle = document.querySelector(".features-content h3");
 const featuresContentP = document.querySelector(".features-content p");
 const featuresContentButton = document.querySelector(
@@ -23,15 +25,13 @@ const featuresContentButton = document.querySelector(
 );
 const featuresList = document.querySelectorAll(".features-list li");
 
-//banner animation
+const bannerTL = gsap.timeline();
 
-const bannerTl = gsap.timeline();
-
-bannerTl
-  .from([bannerAdditonal, banner], {
+bannerTL
+  .from([bannerAddition, banner], {
     duration: 1.2,
     width: 0,
-    skewX: 6,
+    skewX: 4,
     ease: "power3.inOut",
     stagger: {
       amount: 0.2
@@ -40,8 +40,8 @@ bannerTl
   .from(header, {
     delay: -0.2,
     y: 16,
-    duration: 0.8,
     opacity: 0,
+    duration: 0.8,
     ease: "power3.inOut"
   })
   .from(h1Line, {
@@ -75,7 +75,6 @@ bannerTl
     ease: "power3.out"
   });
 
-// hand
 gsap.from(handImg, {
   delay: 2.2,
   x: -100,
@@ -97,14 +96,14 @@ gsap.from([featureBanner, featureBannerGreen], {
   }
 });
 
-//scroll magic
 const featuresTl = gsap.timeline();
+
 featuresTl
   .from([featuresContentTitle, featuresContentP, featuresContentButton], {
     opacity: 0,
     y: 40,
     duration: 0.6,
-    ease: "power3.out",
+    ease: "powe3.out",
     stagger: {
       amount: 0.2
     }
@@ -126,5 +125,6 @@ const scene = new ScrollMagic.Scene({
   triggerHook: 0,
   reverse: false
 })
+  .addIndicators()
   .setTween(featuresTl)
   .addTo(controller);
