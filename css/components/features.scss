@@ -1,0 +1,76 @@
+@import "../variables.scss";
+
+.features {
+  margin-top: 20vh;
+  .features-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .features-content {
+      width: 33%;
+      @media (max-width: $widescreen) {
+        width: 40%;
+      }
+      h3 {
+        font-family: "Playfair Display";
+        color: $blue;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        margin: 0 0 40px;
+      }
+      p {
+        line-height: 1.8rem;
+        font-weight: 300;
+        color: $blue;
+        margin-bottom: 88px;
+        @media (max-width: $widescreen) {
+          padding-right: 60px;
+        }
+      }
+      .btn-row {
+        a {
+          color: $blue;
+          text-decoration: none;
+          font-weight: 600;
+          img {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+    .features-list {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+        li {
+          list-style: none;
+          img {
+            margin-bottom: 24px;
+          }
+          h5 {
+            color: $blue;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0;
+          }
+          p {
+            line-height: 1.8rem;
+            font-weight: 300;
+            color: $blue;
+            width: 270px;
+            margin: 16px 0 72px;
+            font-size: 1rem;
+            @media (max-width: $widescreen) {
+              font-size: 0.875rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
