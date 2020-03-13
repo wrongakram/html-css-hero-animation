@@ -415,3 +415,178 @@ header {
         @media (max-width: 1440px) {
           header .container-fluid .header-inner .nav-logins .apply a {
             padding: 0 24px; } }
+
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 2000px; }
+
+.container {
+  width: 1345px;
+  min-width: 1345px;
+  margin: 0 auto; }
+  @media (max-width: 1440px) {
+    .container {
+      width: 1153px;
+      min-width: 1153px; } }
+  @media (max-width: 1152px) {
+    .container {
+      width: 961px;
+      min-width: 961px; } }
+  @media (max-width: 960px) {
+    .container {
+      width: 767px;
+      min-width: 767px; } }
+  @media (max-width: 768px) {
+    .container {
+      width: 481px;
+      min-width: 481px; } }
+  @media (max-width: 480px) {
+    .container {
+      width: 320px;
+      min-width: 320px; } }
+  .container .row {
+    display: flex;
+    align-items: center;
+    padding: 0 16px; }
+
+.container-fluid {
+  padding: 0 48px; }
+  .container-fluid .row {
+    display: flex;
+    align-items: center;
+    padding: 0 16px; }
+
+.banner {
+  height: 80vh;
+  position: relative; }
+  @media (max-width: 1440px) {
+    .banner {
+      height: 90vh; } }
+  .banner .banner-addition-bg {
+    background: #233567;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%; }
+  .banner .banner-bg {
+    background: #ffe5e5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%; }
+  .banner .banner-inner {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative; }
+    @media (max-width: 1440px) {
+      .banner .banner-inner {
+        height: 90vh; } }
+    .banner .banner-inner .content {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .banner .banner-inner .content .content-inner h1 {
+        font-family: 'Playfair Display';
+        color: #233567;
+        font-size: 3.4rem;
+        line-height: 4.8rem;
+        margin: 32px 0 0;
+        width: 620px; }
+        @media (max-width: 1440px) {
+          .banner .banner-inner .content .content-inner h1 {
+            font-size: 3.1rem;
+            line-height: 3.6rem; } }
+        .banner .banner-inner .content .content-inner h1 .line {
+          overflow: hidden;
+          height: 70px;
+          position: relative; }
+          .banner .banner-inner .content .content-inner h1 .line span {
+            position: absolute; }
+      .banner .banner-inner .content .content-inner p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 300;
+        color: #233567;
+        width: 520px;
+        margin: 32px 0 80px; }
+        @media (max-width: 1440px) {
+          .banner .banner-inner .content .content-inner p {
+            margin: 16px 0 60px; } }
+      .banner .banner-inner .content .content-inner .btn-row a {
+        display: inline-block;
+        height: 56px;
+        line-height: 56px;
+        font-size: 1rem;
+        padding: 0 32px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #ffffff;
+        background: #d57868;
+        border-radius: 100px; }
+      .banner .banner-inner .content .content-inner .play-video {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 4px 4px 0 0;
+        overflow: hidden; }
+        .banner .banner-inner .content .content-inner .play-video .cover {
+          padding: 0;
+          background: #ffe5e5;
+          right: 0;
+          z-index: 9;
+          height: 64px;
+          opacity: 0; }
+        .banner .banner-inner .content .content-inner .play-video span {
+          opacity: 0;
+          display: flex;
+          align-items: center;
+          height: 64px;
+          padding: 0 32px;
+          background: #ffffff;
+          font-weight: 600;
+          color: #233567; }
+          .banner .banner-inner .content .content-inner .play-video span img {
+            margin-right: 1rem; }
+  .banner .image {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .banner .image .image-inner img {
+      width: 450px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9; }
+      @media (max-width: 1440px) {
+        .banner .image .image-inner img {
+          width: 400px; } }
+    .banner .image .image-inner .feature-banner {
+      position: absolute;
+      bottom: 286px;
+      left: -10px;
+      background: #315b96;
+      color: #ffffff;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      border-radius: 4px;
+      font-weight: 600; }
+      .banner .image .image-inner .feature-banner.green {
+        background: #76d8aa;
+        right: 32px;
+        left: auto;
+        bottom: 116px; }
+        @media (max-width: 1440px) {
+          .banner .image .image-inner .feature-banner.green {
+            right: -24px; } }
