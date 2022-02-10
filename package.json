@@ -13,7 +13,7 @@
   "dependencies": {
     "concurrently": "^5.0.0",
     "gsap": "^3.0.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
